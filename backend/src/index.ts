@@ -3,17 +3,17 @@ import cors from "cors";
 import 'dotenv/config.js';
 import mongoose from "mongoose";
 import path from "path";
-//import {v2 as cloudinary} from "cloudinary";
+import {v2 as cloudinary} from "cloudinary";
 import userRouter from './routes/user';
 import authRouter from './routes/auth';
-//import projectRouter from './routes/project';
+import projectRouter from './routes/project';
 
 
-/*cloudinary.config({
+cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
     api_key: process.env.CLOUDINARY_API_KEY,
     api_secret: process.env.CLOUDINARY_API_SECRET,
-})*/
+})
 
 mongoose.connect(process.env.CONN_STR as string)
 .then((con) => console.log("DB connected"))
@@ -44,7 +44,7 @@ app.use(express.static(path.join(__dirname, "../../frontend/dist")))
 
 app.use('/api/user', userRouter )
 app.use('/api/auth', authRouter)
-//app.use('/api/project', projectRouter)
+app.use('/api/project', projectRouter)
 
 app.get("*", (req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));

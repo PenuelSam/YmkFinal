@@ -1,4 +1,4 @@
-/*import { useQuery } from "react-query";
+import { useQuery } from "react-query";
 import { useParams } from "react-router-dom"
 import * as apiClient from "../../api-Client"
 import { Index } from "../../component/nav";
@@ -36,4 +36,4 @@ export const VideoView = () => {
         </div>
         </div>
     )
-}*/
+}

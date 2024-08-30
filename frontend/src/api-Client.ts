@@ -1,7 +1,7 @@
 import axios from "axios";
 import { RegisterType } from "./pages/register";
-/*import { ProjectFormData } from "./pages/addProject";
-import {ProjectType} from "../../backend/src/models/project"*/
+import { ProjectFormData } from "./pages/addProject";
+import {ProjectType} from "../../backend/src/models/project"
 const API_BASE_URL =  import.meta.env.VITE_API_BASE_URL || '';
 
 const api = axios.create({
@@ -19,7 +19,7 @@ export const login = async (data: RegisterType) => {
     return response.data
 } 
 
-/*export const addProject = async (data: ProjectFormData ) => {
+export const addProject = async (data: ProjectFormData ) => {
     const project = new FormData();
     project.append("name", data.name)
     if(data.imageUrls) {
@@ -63,4 +63,4 @@ export const fetchProjectById = async (projectId: string): Promise<ProjectType> 
 export const updateProjectById = async (projectId: string, formData: ProjectFormData) => {
     const response = api.put(`/api/project/${projectId}`, formData)
     return response
-}*/
+}
