@@ -1,4 +1,4 @@
-import { useQuery } from "react-query";
+/*import { useQuery } from "react-query";
 import { useParams } from "react-router-dom"
 import * as apiClient from "../../api-Client"
 export const ImageView = () => {
@@ -25,4 +25,4 @@ export const ImageView = () => {
                 </div>
         </div>
     )
-}
+}*/

@@ -1,4 +1,4 @@
-import { useQuery } from "react-query"
+/*import { useQuery } from "react-query"
 import * as apiclient from "../../api-Client"
 import { Index } from "../../component/nav"
 import { Link } from "react-router-dom"
@@ -43,4 +43,4 @@ export const Videos = () => {
         }
     </div>
   )
-}
+}*/

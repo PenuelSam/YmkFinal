@@ -1,4 +1,4 @@
-import { useQuery } from "react-query"
+/*import { useQuery } from "react-query"
 import * as apiclient from "../../api-Client"
 import { Index } from "../../component/nav"
 import { Modal } from "./Modal"
@@ -43,7 +43,7 @@ export const Images = () => {
         <div className=" h-full top-[10rem] relative flex flex-col items-start justify-between">
        
         <div className=" flex  h-[40rem] md:h-[20rem] items-center gap-5 ml-10 md:ml-5 md:w-[90%] md:justify-center">
-            {/*<h1 className="text-[15rem] font-IFkicaBold">{totalLength < 10 ? `0${totalLength}` : totalLength} -</h1>*/}
+            {<h1 className="text-[15rem] font-IFkicaBold">{totalLength < 10 ? `0${totalLength}` : totalLength} -</h1>}
             <h1 className="text-[15rem] md:text-[6rem]  sm:text-[3.5rem] xsm:text-[3rem] md:flex md:justify-center font-bold uppercase font-IFkicaMedium ">Images</h1>
         </div>
         
@@ -87,4 +87,4 @@ export const Images = () => {
         </div>
     </div>
   )
-}
+}*/

@@ -1,4 +1,4 @@
-import { useQuery } from "react-query"
+/*import { useQuery } from "react-query"
 import * as apiClient from "../api-Client"
 import { CiEdit } from "react-icons/ci";
 import { RiDeleteBin6Line } from "react-icons/ri";
@@ -43,4 +43,4 @@ export const MyProjects = () => {
         </div>
     </div>
   )
-}
+}*/

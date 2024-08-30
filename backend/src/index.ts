@@ -40,15 +40,15 @@ app.use(cors({
 
 //app.use(express.static(path.join(__dirname, "../../frontend/dist")));
 
-//app.use(express.static(path.join(__dirname, "../../frontend/dist")))
+app.use(express.static(path.join(__dirname, "../../frontend/dist")))
 
 app.use('/api/user', userRouter )
 app.use('/api/auth', authRouter)
 //app.use('/api/project', projectRouter)
 
-//app.get("*", (req: Request, res: Response) => {
-    //res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));
-//})
+app.get("*", (req: Request, res: Response) => {
+    res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));
+})
 
 /*app.get('*', (req: Request, res: Response) => {
    res.sendFile(path.join(__dirname,"../../frontend/dist/index.html"))
