@@ -1,4 +1,4 @@
-import {Schema, model} from "mongoose";
+import mongoose from "mongoose";
 
 export type ProjectType = {
     _id: string;
@@ -7,12 +7,12 @@ export type ProjectType = {
     imageUrls: string[];
 }
 
-const projectSchema = new Schema<ProjectType>({
+const projectSchema = new mongoose.Schema<ProjectType>({
     name: String,
     videoUrls: [String],
     imageUrls: [String]
 })
 
-const Project = model<ProjectType>("Project", projectSchema)
+const Project = mongoose.model<ProjectType>("Project", projectSchema)
 
 export default Project
