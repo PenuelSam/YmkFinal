@@ -8,15 +8,15 @@ const cors_1 = __importDefault(require("cors"));
 require("dotenv/config.js");
 const mongoose_1 = __importDefault(require("mongoose"));
 const path_1 = __importDefault(require("path"));
-//import {v2 as cloudinary} from "cloudinary";
+const cloudinary_1 = require("cloudinary");
 const user_1 = __importDefault(require("./routes/user"));
 const auth_1 = __importDefault(require("./routes/auth"));
-//import projectRouter from './routes/project';
-/*cloudinary.config({
+const project_1 = __importDefault(require("./routes/project"));
+cloudinary_1.v2.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
     api_key: process.env.CLOUDINARY_API_KEY,
     api_secret: process.env.CLOUDINARY_API_SECRET,
-})*/
+});
 mongoose_1.default.connect(process.env.CONN_STR)
     .then((con) => console.log("DB connected"))
     .catch((err) => console.log(err));
@@ -37,13 +37,13 @@ app.use((0, cors_1.default)({
 app.use(express_1.default.static(path_1.default.join(__dirname, "../../frontend/dist")));
 app.use('/api/user', user_1.default);
 app.use('/api/auth', auth_1.default);
-//app.use('/api/project', projectRouter)
+app.use('/api/project', project_1.default);
 app.get("*", (req, res) => {
     res.sendFile(path_1.default.join(__dirname, "../../frontend/dist/index.html"));
 });
 /*app.get('*', (req: Request, res: Response) => {
    res.sendFile(path.join(__dirname,"../../frontend/dist/index.html"))
 })*/
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Server is running on port ${port}`);
 });
