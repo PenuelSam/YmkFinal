@@ -1,5 +1,5 @@
 // Use require for mongoose
-const mongoose = require('mongoose');
+import mongoose = require('mongoose');
 
 // Define the ProjectType interface for TypeScript
 export type ProjectType = {
