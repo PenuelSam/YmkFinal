@@ -1,7 +1,5 @@
-// Use require for mongoose
-import mongoose = require('mongoose');
+import mongoose from 'mongoose'; // Use proper ES module import
 
-// Define the ProjectType interface for TypeScript
 export type ProjectType = {
     _id: string;
     name: string;
@@ -9,15 +7,12 @@ export type ProjectType = {
     imageUrls: string[];
 };
 
-// Define the schema without passing type arguments directly to mongoose.Schema
-const projectSchema = new mongoose.Schema({
+const projectSchema = new mongoose.Schema<ProjectType>({
     name: { type: String, required: true },
-    videoUrls: [{ type: String }],
-    imageUrls: [{ type: String }]
+    videoUrls: [String],
+    imageUrls: [String]
 });
 
-// Define the model without directly passing type arguments to mongoose.model
-const Project = mongoose.model("Project", projectSchema);
+const Project = mongoose.model<ProjectType>("Project", projectSchema);
 
-// Export the model as default
 export default Project;
