@@ -1,16 +1,15 @@
-import { useQuery } from "react-query";
+
 import { useParams } from "react-router-dom"
-import * as apiClient from "../../api-Client"
+
+import { Projects } from "../../data/projects";
 export const ImageView = () => {
         const {imageId} = useParams();
-        const {data: Project} = useQuery("fetchProjectById", () => apiClient.fetchProjectById(imageId as string),{
+        /*const {data: Project} = useQuery("fetchProjectById", () => apiClient.fetchProjectById(imageId as string),{
             enabled: !!imageId
-        })
+        })*/
 
-        if(!Project){
-            return <></>
-        }
-
+            const Project = Projects.find((prod) => prod._id === imageId)
+      
     return (
         <div className="container mx-auto h-screen flex flex-col justify-center items-center">
             <h1>Image View</h1>

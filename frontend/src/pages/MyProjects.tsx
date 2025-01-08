@@ -10,15 +10,13 @@ export const MyProjects = () => {
             console.log("Error fetching hotels")
         }
     })
-    if(!Projects){
-        return <span>No Projects Found</span>
-    }
+   
   return (
     <div className=" md:w-[90%] md:mx-auto h-full  flex flex-col items-center">
         <h1 className="text-center py-10">My Projects</h1>
         <div className="mt-10">
         {
-            Projects.map((project, index) => {
+            Projects?.map((project, index) => {
                 const videos = project.videoUrls
                         return(
                             <div key={index} className="flex items-center gap-4   my-5 w-[500px] bg-[#242323] rounded-[10px]" >

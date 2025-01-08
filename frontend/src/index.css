@@ -63,7 +63,7 @@ body {
 
   body{
     overflow-x: hidden;
-    background: #000;
+    background: #fff;
   }
 
   .banner{
@@ -77,6 +77,7 @@ body {
   .button{
     position: fixed;
     right: -20px;
+
     margin: 20px;
     width: 80px;
     height: 80px;
@@ -97,7 +98,7 @@ body {
     height: 1px;
     width: 40%;
     margin: auto;
-    background-color: white;
+    background-color: black;
     position: relative;
     transition: transform 0.3s;
   }
@@ -113,11 +114,13 @@ body {
   .burgeractive.burger::after{
     transform: rotate(45deg);
     top: -1px;
+    background-color: #fff;
   }
 
   .burgeractive.burger::before{
     transform: rotate(-45deg);
     top: 0px;
+    background-color: #fff;
   }
 
   .menu{

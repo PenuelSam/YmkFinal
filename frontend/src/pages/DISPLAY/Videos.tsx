@@ -1,22 +1,20 @@
-import { useQuery } from "react-query"
-import * as apiclient from "../../api-Client"
+
 import { Index } from "../../component/nav"
 import { Link } from "react-router-dom"
+import { Projects } from "../../data/projects"
 
 export const Videos = () => {
-    const {data: Projects} = useQuery("fetchProjects",apiclient.fetchProjects,{
+    /*const {data: Projects} = useQuery("fetchProjects",apiclient.fetchProjects,{
         // cacheTime: 1000 * 60 * 10, // 10 minutes
         // staleTime: 1000 * 60 * 10, // 10 minutes
         // refetchOnWindowFocus: false,
         // refetchOnMount: false,
-    })
+    })*/
 
-    if(!Projects){
-        return <></>
-    }
+   
 
   return (
-    <div>
+    <div className="relative">
         <Index />
         <div className="ml-5  relative top-[10rem] ">
             <h1 className="text-[15rem] md:text-[6rem]  sm:text-[3.5rem] xsm:text-[3rem] md:flex md:justify-center font-bold uppercase font-IFkicaMedium">Videos</h1>

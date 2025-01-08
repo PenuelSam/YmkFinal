@@ -1,25 +1,29 @@
-import { useQuery } from "react-query";
+
 import { useParams } from "react-router-dom"
-import * as apiClient from "../../api-Client"
+
 import { Index } from "../../component/nav";
+import { Projects } from "../../data/projects";
 export const VideoView = () => {
         const {videoId} = useParams();
-        const {data: Project} = useQuery("fetchProjectById", () => apiClient.fetchProjectById(videoId as string),{
+      
+        /*const {data: Project} = useQuery("fetchProjectById", () => apiClient.fetchProjectById(videoId as string),{
             enabled: !!videoId
-        })
+        })*/
 
-        if(!Project){
-            return <></>
-        }
+      const Project = Projects.find((proj) =>  proj._id === videoId)
+
+    
+      //console.log(Project)
 
     return (
         <div>
             <Index />
+            
         <div className="container mx-auto h-screen flex flex-col md:w-[95%]   md:relative md:top-20  justify-center items-center">
             <div className="flex justify-center items-center gap-4">
                {
                 Project?.videoUrls.map((vid) => (
-                    <div>
+                     <div>
                         <div className="flex items-center gap-4 my-2">
                             <div className="w-[50px] h-[50px]"><video src={vid} className="w-full h-full object-cover rounded-[50%]"/></div>
                             <div className="w-[10px] h-[1px] bg-white"></div>
@@ -29,6 +33,7 @@ export const VideoView = () => {
                         <video src={vid} controls className="w-full h-full object-cover"/>
                     </div>
                     </div>
+                  
                    
                 ))
                }     

@@ -1,20 +1,22 @@
-import { useQuery } from "react-query"
-import * as apiclient from "../../api-Client"
+
 import { Index } from "../../component/nav"
 import { Modal } from "./Modal"
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
+import { Projects } from "../../data/projects";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+
 
 
 export const Images = () => {
    const [modal, setModal] = useState(false)
     
 
-    const {data: Projects} = useQuery("fetchProjects",apiclient.fetchProjects)
+    //const {data: Projects} = useQuery("fetchProjects",apiclient.fetchProjects)
 
-    if(!Projects){
-        return <></>
-    }
+   
 
     
 
@@ -62,14 +64,26 @@ export const Images = () => {
                                      
                                      <p className="text-[3rem] md:text-[1.5rem] my-5 w-[95%] mx-auto font-IFkicaLight">{`${prod.name}`}</p>
                                    
-                                <div className="w-[95%] mx-auto grid grid-cols-3 md:grid-cols-2 gap-4">
+                                <div className="w-full pl-[3rem] md:pl-[1rem]">
+
+                                <Swiper
+                      spaceBetween={5}
+                      slidesPerView={3.5}
+                      breakpoints={{
+                        768: { slidesPerView: 2.5 }, // For tablets
+                        480: { slidesPerView: 1.5 }, // For mobile devices
+                      }}
+                    >
                                
-                                {Images.map((url) => (
-                                    
-                                       <div className="  w-full my-2">
-                                         <img src={url} alt="" className="w-full rounded-md" />
+                                {Images.map((url, index) => (
+                                     <SwiperSlide key={index} onClick={() => setModal(!modal)}>
+                                       <div className="  w-full  my-2">
+                                         <img src={url} alt="" className="w-full h-full object-cover rounded-md" />
                                        </div>
+                                       </SwiperSlide>
                                     ))}
+
+                    </Swiper>
                                    
                                 </div>
                                 </div>

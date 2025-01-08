@@ -8,8 +8,8 @@ export const Index = () => {
     const [isActive, setIsActive] = useState(false)
   return (
     <>
-        <div className="button z-[999] cursor-pointer" onClick={() => setIsActive(!isActive)}>
-            <div className={`burger ${isActive ? 'burgeractive' : ''}`} ></div>
+        <div className="button top-0 md:top-[-2rem] md:right-[-2rem] z-[999] cursor-pointer" onClick={() => setIsActive(!isActive)}>
+            <div className={`burger  ${isActive ? 'burgeractive' : ''}`} ></div>
         </div>
         <AnimatePresence mode="wait">
             {isActive && <Nav /> }
