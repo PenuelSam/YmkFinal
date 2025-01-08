@@ -11,17 +11,14 @@ export const Nav = () => {
           href: "/",
         },
         {
-          title: "Images",
-          href: "/images",
+          title: "Work",
+          href: "/work",
         },
         {
-            title: "Videos",
-            href: "/videos",
-          },
-        {
-          title: "About",
-          href: "/about",
+            title: "Contact",
+            href: "/contact",
         },
+      
     ]
 
   return (
@@ -32,19 +29,19 @@ export const Nav = () => {
                     {
                         navItems.map((nav, index) => (
                             <motion.div className="mt-3 md:mt-1" custom={index} variants={slide} animate="enter" exit="exit" key={index}>
-                                <Link className="text-[2rem] md:text-[1.5rem] font-IFkicaBold" to={nav.href}>{nav.title}</Link>
+                                <Link className="text-[2rem] md:text-[1.5rem] font-Inter" to={nav.href}>{nav.title}</Link>
                             </motion.div>
                         ))
                     }
                 </div>
                 <div className="w-full h-[1px] bg-[#818080]"></div>
                 <div className="footer md:gap-[10px]">
-                  <Link to="/signin">
+                  
                   <div className="flex items-center  gap-2 text-[15px] md:text-[13px] sm:text-[12px]">
                   <p className="font-IFkicaLight">&copy; 2024</p>
                   <p className="font-IFkicaLight">Ymkupnext!</p>
                   </div>
-                  </Link>
+                 
                   <p className="text-[15px] md:text-[13px] sm:text-[12px] font-IFkicaLight">Creative Director</p>
                 </div>
             </div>

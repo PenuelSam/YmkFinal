@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        IFkicaLight: ['IF Kica Light'],
+        Inter: ['Inter'],
         IFkicaMedium: ['IF Kica Bold'],
         IFkicaBold: ['IF Kica Regular'],
       },

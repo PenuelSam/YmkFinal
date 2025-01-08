@@ -4,9 +4,9 @@
 
 
 @font-face {
-    font-family: 'IF Kica Light';
-    src: url('../src/ymk-fonts/IFKica-Light.woff2') format('woff2'),
-        url('../src/ymk-fonts/IFKica-Light.woff') format('woff');
+    font-family: 'Inter';
+    src: url('../src/Web Fonts/Inter-SemiBold.woff2') format('woff'),
+        url('../src/Web Fonts/Inter-SemiBold.woff') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -77,7 +77,6 @@ body {
   .button{
     position: fixed;
     right: -20px;
-
     margin: 20px;
     width: 80px;
     height: 80px;

@@ -1,5 +1,5 @@
 
-import { Index } from "../../component/nav"
+
 import { Modal } from "./Modal"
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
@@ -41,12 +41,12 @@ export const Images = () => {
             <div className="fixed right-5 top-5 z-[999] cursor-pointer " onClick={() => setModal(!modal)}><IoClose fontSize={40}/></div>
         )}
         
-        {!modal && <Index />}
+        
         <div className=" h-full top-[10rem] relative flex flex-col items-start justify-between">
        
-        <div className=" flex  h-[40rem] md:h-[20rem] items-center gap-5 ml-10 md:ml-5 md:w-[90%] md:justify-center">
+        <div className=" flex   items-center gap-5 ml-10 md:ml-5 md:w-[90%] md:justify-center">
             {/*<h1 className="text-[15rem] font-IFkicaBold">{totalLength < 10 ? `0${totalLength}` : totalLength} -</h1>*/}
-            <h1 className="text-[15rem] md:text-[6rem]  sm:text-[3.5rem] xsm:text-[3rem] md:flex md:justify-center font-bold uppercase font-IFkicaMedium ">Images</h1>
+            <h1 className="text-[5rem] md:text-[6rem]  sm:text-[3.5rem] xsm:text-[3rem] md:flex md:justify-center font-bold uppercase font-Inter ">Images <span className="text-[18px]"></span></h1>
         </div>
         
       
@@ -62,7 +62,7 @@ export const Images = () => {
                             return (
                                 <div onClick={() => setModal(!modal)} className="cursor-pointer">
                                      
-                                     <p className="text-[3rem] md:text-[1.5rem] my-5 w-[95%] mx-auto font-IFkicaLight">{`${prod.name}`}</p>
+                                     <p className="text-[2rem] md:text-[1.5rem] my-5 w-[95%] mx-auto font-Inter">{`${prod.name}`}</p>
                                    
                                 <div className="w-full pl-[3rem] md:pl-[1rem]">
 
