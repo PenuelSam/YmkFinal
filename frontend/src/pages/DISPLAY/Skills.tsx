@@ -4,7 +4,7 @@ import { skills } from "../../data/projects"
 
 function Skills() {
   return (
-    <div className="px-[3.5rem] mt-[3rem] ">
+    <div className="px-[3.5rem] mt-[3rem] md:px-[2rem]">
       <h1 className="text-[4rem] text-center font-Inter">What I do.</h1>
       <div className="w-full grid grid-cols-3 md:grid-cols-1 gap-10 mt-10">
             {
