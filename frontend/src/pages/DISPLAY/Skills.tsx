@@ -10,7 +10,7 @@ function Skills() {
             {
                 skills.map((s) => (
                     <div className="flex flex-col items-center gap-5">
-                        <div className="w-[500px] h-[400px] mb-10"><img src={s.image} alt="" className="w-full h-full object-cover rounded-md"/></div>
+                        <div className="w-[500px] h-[400px] mb-10 md:w-[90%]"><img src={s.image} alt="" className="w-full h-full object-cover rounded-md"/></div>
                         <div><h1 className="text-[2rem] font-bold font-Inter">{s.skill}</h1></div>
                         <div><p className="text-[18px] text-center font-Inter">{s.text}</p></div>
                     </div>
