@@ -11,7 +11,7 @@ export const Index = () => {
         <div className="relative left-[3rem] top-[3rem]">
    <h1 className="text-[3rem] font-Inter">Ymkupnext!</h1>
    </div>
-        <div className="button top-0 md:top-[1.5rem] md:right-[2rem] z-[999] cursor-pointer" onClick={() => setIsActive(!isActive)}>
+        <div className="button top-0 md:top-[1.5rem] md:right-[1rem] z-[999] cursor-pointer" onClick={() => setIsActive(!isActive)}>
             <div className={`burger  ${isActive ? 'burgeractive' : ''}`} ></div>
         </div>
         <AnimatePresence mode="wait">
