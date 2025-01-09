@@ -13,7 +13,7 @@ export const Homepage = () => {
         </div>
         <div className="flex-1  flex flex-col gap-10 md:gap-5">
           <p className="text-[20px] font-Inter">FullStack Creative.</p>
-          <p className="text-[4rem] md:text-[2rem] leading-[80px] md:leading-[1.6] pr-[2rem] md:pr-0 font-Inter tracking-tight font-semibold" >Hi, my name is Yimika. I do photography, videography and content marketing. Let’s work together.</p>
+          <p className="text-[4rem] md:text-[2rem] leading-[80px] md:leading-[1.6] pr-[2rem] md:pr-0 font-Inter tracking-tight border font-semibold" >Hi, my name is Yimika. I do photography, videography and content marketing. Let’s work together.</p>
           <Link to="/contact" className="mt-20 md:mt-5">
             <button className="px-[2rem] py-[1rem] bg-black text-white rounded-md text-[18px]">Contact</button>
           </Link>

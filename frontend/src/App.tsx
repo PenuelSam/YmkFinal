@@ -7,7 +7,7 @@ import WorkPage from "./pages/DISPLAY/Work"
 
 const App = () => {
   return (
-    <div className="w-screen h-screen bg-white text-black ">
+    <div className="w-screen h-screen bg-white text-black overflow-x-hidden">
     <Router>
       <Routes>
         <Route path="*" element={<Homepage />} />
