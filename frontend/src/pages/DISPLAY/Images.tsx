@@ -33,7 +33,7 @@ export const Images = () => {
       
         {
             projects && (
-                <div className=" w-full md:w-[90%] border md:mx-[2rem] md:pl-6 grid grid-cols-3 md:grid-cols-2 gap-4 mt-[5rem]  mb-[3rem]"  >
+                <div className=" w-full  md:px-[1rem] grid grid-cols-3 md:grid-cols-2 gap-4 mt-[5rem]  mb-[3rem]"  >
       
                 
                     {
@@ -41,7 +41,7 @@ export const Images = () => {
                         projects.map((prod) => {
                             const Images = prod.imageUrls
                             return (
-                                <div onClick={() => setModal(!modal)} className="cursor-pointer">
+                                <div onClick={() => setModal(!modal)} className="cursor-pointer border">
                                      
                                     
                                    
@@ -49,7 +49,7 @@ export const Images = () => {
                                 {Images.slice(0,1).map((url, index) => (
                                      
                                       <Link key={index} to={`/image/${prod._id}`}>
-                                      <div className="w-[500px] h-[700px] md:w-[250px] md:h-[400px] sm:w-[250px] sm:h-[400px] my-2">
+                                      <div className="w-[500px] h-[700px] md:w-[300px] md:h-[500px] sm:w-[200px] sm:h-[300px] my-2">
                                          <img src={url} alt="" className="w-full h-full object-cover " />
                                        </div>
                                       </Link>
