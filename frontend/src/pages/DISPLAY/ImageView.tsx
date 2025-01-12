@@ -56,7 +56,7 @@ const handleImageClick = (index: number): void => {
         {Project?.imageUrls.map((url, index) => (
           <div
             key={url}
-            className="w-[500px] h-[500px] md:w-[300px] md:h-[300px] cursor-pointer"
+            className="w-[500px] h-[500px] md:w-[300px] md:h-[300px] sm:w-[200px] sm:h-[200px] cursor-pointer"
             onClick={() => handleImageClick(index)}
           >
             <img
@@ -86,7 +86,7 @@ const handleImageClick = (index: number): void => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="absolute bottom-[45%] md:left-3 left-[3rem]">
+            <div className="absolute bottom-[45%] md:left-3 sm:bottom-5 left-[3rem]">
             <button
                 className="text-[3rem] font-bold cursor-pointer text-white"
                 onClick={handlePrevImage}
@@ -94,7 +94,7 @@ const handleImageClick = (index: number): void => {
                 <IoIosArrowDropleft />
               </button>
             </div>
-            <div className="absolute bottom-[45%] md:right-3 right-[3rem] flex gap-5">
+            <div className="absolute bottom-[45%] sm:bottom-5 md:right-3 right-[3rem] flex gap-5">
               
               <button
                 className="text-[3rem] font-bold cursor-pointer text-white"
