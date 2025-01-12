@@ -1,18 +1,17 @@
 import { useRef } from "react";
-import { useQuery } from "react-query"
-import * as apiclient from "../../api-Client"
 import { Link } from "react-router-dom";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import { Projects } from "../../data/projects";
 
 export const Modal = () => {
     const galleryRef = useRef<HTMLDivElement>(null);
 
-    const {data: Projects} = useQuery("fetchProjects",apiclient.fetchProjects)
+    /*const {data: Projects} = useQuery("fetchProjects",apiclient.fetchProjects)
 
     if(!Projects){
         return <></>
-    }
+    }*/
 
     const scroll = (direction: 'left' | 'right') => {
         if (galleryRef.current) {

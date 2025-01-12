@@ -1,17 +1,22 @@
 import { useState } from "react"
 import { Nav } from "./navbar/nav"
 import { AnimatePresence } from "framer-motion"
-
+import { FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 export const Index = () => {
     const [isActive, setIsActive] = useState(false)
   return (
-    <div className="w-full ">
-        <div className="relative left-[3rem] top-[3rem]">
-   <h1 className="text-[3rem] font-Inter">Ymkupnext!</h1>
-   </div>
-        <div className="button top-0 md:top-[1.5rem] md:right-[1rem] z-[999] cursor-pointer" onClick={() => setIsActive(!isActive)}>
+    <div className="w-full flex items-center justify-between">
+      <div className="flex gap-5 pl-[2rem]">
+      <FaInstagram style={{fontSize: "40px", cursor: "pointer"}}/>
+      <FaInstagram style={{fontSize: "40px", opacity:0}}/>
+      </div>
+        <Link to="/" className="">
+          <h1 className="text-[3rem] font-apercuM">Ymkupnext!</h1>
+        </Link>
+        <div className="button  z-[999] cursor-pointer" onClick={() => setIsActive(!isActive)}>
             <div className={`burger  ${isActive ? 'burgeractive' : ''}`} ></div>
         </div>
         <AnimatePresence mode="wait">

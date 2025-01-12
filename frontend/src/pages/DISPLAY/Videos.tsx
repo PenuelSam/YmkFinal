@@ -1,4 +1,4 @@
-import { Index } from "../../component/nav";
+
 import { Projects } from "../../data/projects";
 import { useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa";
@@ -35,10 +35,9 @@ export const Videos = () => {
     };
 
     return (
-        <div className="relative">
-            <Index />
-            <div className="ml-5 relative top-[10rem]">
-                <h1 className="text-[5rem] md:text-[6rem] sm:text-[3.5rem] xsm:text-[3rem] md:flex md:justify-center font-bold uppercase font-Inter">
+        <div className="">
+            <div className="w-full items-center justify-center relative top-[10rem]">
+                <h1 className="text-[5rem]  sm:text-[3.5rem] xsm:text-[3rem] flex justify-center font-bold uppercase font-apercuB">
                     Videos
                 </h1>
             </div>
@@ -81,7 +80,7 @@ export const Videos = () => {
                                     </div>
                                     
                                      </div>
-                                    <h1 className="text-[1.3rem] text-center font-bold underline font-Inter">{prod.name}</h1>
+                                    <h1 className="text-[1.5rem] pl-2   font-apercuR">{prod.name}</h1>
                                 </div>
                                
                             );

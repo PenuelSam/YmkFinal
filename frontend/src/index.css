@@ -30,6 +30,47 @@
     font-display: swap;
 }
 
+@font-face {
+  font-family: "Apercu-pro-bold-italic";
+  src: url('./apercu-pro/apercu_bold_italic_pro.otf'),
+}
+@font-face {
+  font-family: "Apercu-pro-bold";
+  src: url('./apercu-pro/apercu_bold_pro.otf'),
+}
+
+@font-face {
+  font-family: "Apercu-pro-medium-italic";
+  src: url('./apercu-pro/apercu_medium_italic_pro.otf'),
+}
+@font-face {
+  font-family: "Apercu-pro-medium";
+  src: url('./apercu-pro/apercu_medium_pro.otf'),
+}
+@font-face {
+  font-family: "Apercu-pro-regular-italic";
+  src: url('./apercu-pro/apercu_regular_italic_pro.otf'),
+}
+@font-face {
+  font-family: "Apercu-pro-regular";
+  src: url('./apercu-pro/apercu_regular_pro.otf'),
+}
+
+@font-face {
+  font-family: 'DiptyqueB';
+  src: url('./saint-german/Diptyque-Bold.woff2') format('woff2'),
+       url('./saint-german/Diptyque-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'DiptyqueBI';
+  src: url('./saint-german/Diptyque-BoldItalic.woff2') format('woff2'),
+       url('./saint-german/Diptyque-BoldItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'DiptyqueR';
+  src: url('./saint-german/Diptyque-Regular.woff2') format('woff2'),
+       url('./saint-german/Diptyque-Regular.woff') format('woff');
+}
 
 
   /* For Chrome, Edge, and Safari */
@@ -49,6 +90,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #000; /* Background of the thumb when hovered */
 }
+
+
 
 /* For Firefox */
 html {
@@ -75,8 +118,7 @@ body {
   }
 
   .button{
-    position: fixed;
-    right: -20px;
+    position: relative;
     margin: 20px;
     width: 80px;
     height: 80px;
@@ -113,22 +155,22 @@ body {
   .burgeractive.burger::after{
     transform: rotate(45deg);
     top: -1px;
-    background-color: #fff;
+    background-color: black;
   }
 
   .burgeractive.burger::before{
     transform: rotate(-45deg);
     top: 0px;
-    background-color: #fff;
+    background-color: black;
   }
 
   .menu{
     height: 100vh;
-    background-color: rgb(41, 41, 41);
+    background-color: #f6f3ea;
     position: fixed;
     right: 0;
     top: 0;
-    color: white;
+    color: black;
   }
 
   .body{
@@ -151,7 +193,7 @@ body {
   }
 
   .header{
-    color: rgb(153, 153, 153);
+    color: black;
     text-transform: uppercase;
     font-size: 11px;
     margin-bottom: 40px;
@@ -163,7 +205,7 @@ body {
     justify-content: space-between;
     font-size: 12px;
     gap: 60px;
-    color: rgb(153, 153, 153);
+    color: black;
 }
 
 .svgCurve{
@@ -172,7 +214,7 @@ body {
     left: -99px;
     width: 100px;
     height: 100%;
-    fill: rgb(41, 41, 41);
+    fill: #f6f3ea;
     stroke: none;
 }
 

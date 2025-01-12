@@ -1,10 +1,12 @@
+import { Index } from "../../component/nav"
 import { Images } from "./Images"
 import { Videos } from "./Videos"
 
 
 function WorkPage() {
   return (
-    <div>
+    <div className="overflow-hidden">
+      <Index />
       <Videos />
       <Images />
     </div>

@@ -3,16 +3,18 @@ import { Homepage } from "./pages/DISPLAY/Homepage"
 import { Images } from "./pages/DISPLAY/Images"
 import { Contact } from "./pages/DISPLAY/Contact"
 import WorkPage from "./pages/DISPLAY/Work"
+import { ImageView } from "./pages/DISPLAY/ImageView"
 
 
 const App = () => {
   return (
-    <div className="w-screen h-screen bg-white text-black overflow-x-hidden">
+    <div className="w-screen h-full bg-[#f6f3ea] text-black overflow-x-hidden">
     <Router>
       <Routes>
         <Route path="*" element={<Homepage />} />
         <Route path="/work" element={<WorkPage />} />
         <Route path="/images" element={<Images/>} />
+        <Route path="/image/:imageId" element={<ImageView/>} />
         <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>

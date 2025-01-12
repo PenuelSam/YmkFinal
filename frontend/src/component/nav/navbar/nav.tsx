@@ -29,7 +29,7 @@ export const Nav = () => {
                     {
                         navItems.map((nav, index) => (
                             <motion.div className="mt-3 md:mt-1" custom={index} variants={slide} animate="enter" exit="exit" key={index}>
-                                <Link className="text-[2rem] md:text-[1.5rem] font-Inter" to={nav.href}>{nav.title}</Link>
+                                <Link className="text-[2rem]  font-apercuR" to={nav.href}>{nav.title}</Link>
                             </motion.div>
                         ))
                     }
@@ -38,11 +38,11 @@ export const Nav = () => {
                 <div className="footer md:gap-[10px]">
                   
                   <div className="flex items-center  gap-2 text-[15px] md:text-[13px] sm:text-[12px]">
-                  <p className="font-IFkicaLight">&copy; 2024</p>
-                  <p className="font-IFkicaLight">Ymkupnext!</p>
+                  <p className="font-apercuB">&copy; 2024</p>
+                  <p className="font-apercuB">Ymkupnext!</p>
                   </div>
                  
-                  <p className="text-[15px] md:text-[13px] sm:text-[12px] font-IFkicaLight">Creative Director</p>
+                  <p className="text-[15px] md:text-[13px] sm:text-[12px] font-apercuB">Creative Director</p>
                 </div>
             </div>
             <Curve />

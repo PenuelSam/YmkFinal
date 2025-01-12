@@ -4,33 +4,14 @@ import { Modal } from "./Modal"
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { Projects } from "../../data/projects";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 
 
 export const Images = () => {
    const [modal, setModal] = useState(false)
-    
 
-    //const {data: Projects} = useQuery("fetchProjects",apiclient.fetchProjects)
-
-   
-
-    
-
-    
- 
-      
-      
-
-
-
-    //const imageLength = Projects.map((prod) => prod.imageUrls )
-//const totalLength = imageLength.length
-
-
+  const projects = Projects.filter(prod => prod.imageUrls.length > 0)
 
     
 
@@ -42,48 +23,39 @@ export const Images = () => {
         )}
         
         
-        <div className=" h-full top-[10rem] relative flex flex-col items-start justify-between">
+        <div className="  top-[10rem] relative flex flex-col items-start justify-between">
        
-        <div className=" flex   items-center gap-5 ml-10 md:ml-5 md:w-[90%] md:justify-center">
+        <div className="w-full flex   items-center gap-5  md:mx-5 md:w-[90%] justify-center">
             {/*<h1 className="text-[15rem] font-IFkicaBold">{totalLength < 10 ? `0${totalLength}` : totalLength} -</h1>*/}
-            <h1 className="text-[5rem] md:text-[6rem]  sm:text-[3.5rem] xsm:text-[3rem] md:flex md:justify-center font-bold uppercase font-Inter ">Images <span className="text-[18px]"></span></h1>
+            <h1 className="text-[5rem]   sm:text-[3.5rem] xsm:text-[3rem] flex justify-center font-bold uppercase font-apercuB ">Images</h1>
         </div>
         
       
         {
-            Projects && (
-                <div className=" w-full flex flex-col"  >
+            projects && (
+                <div className=" w-full md:px-[1rem] grid grid-cols-3 md:grid-cols-2 gap-4 mt-[5rem]  mb-[3rem]"  >
       
                 
                     {
                         
-                        Projects.map((prod) => {
+                        projects.map((prod) => {
                             const Images = prod.imageUrls
                             return (
                                 <div onClick={() => setModal(!modal)} className="cursor-pointer">
                                      
-                                     <p className="text-[2rem] md:text-[1.5rem] my-5 w-[95%] mx-auto font-Inter">{`${prod.name}`}</p>
+                                    
                                    
-                                <div className="w-full pl-[3rem] md:pl-[1rem]">
-
-                                <Swiper
-                      spaceBetween={5}
-                      slidesPerView={3.5}
-                      breakpoints={{
-                        768: { slidesPerView: 2.5 }, // For tablets
-                        480: { slidesPerView: 1.5 }, // For mobile devices
-                      }}
-                    >
-                               
-                                {Images.map((url, index) => (
-                                     <SwiperSlide key={index} onClick={() => setModal(!modal)}>
-                                       <div className="  w-full  my-2">
-                                         <img src={url} alt="" className="w-full h-full object-cover rounded-md" />
+                                <div className="w-full px-[3rem] md:px-0">
+                                {Images.slice(0,1).map((url, index) => (
+                                     
+                                      <Link key={index} to={`/image/${prod._id}`}>
+                                      <div className="w-[500px] h-[700px] md:w-[300px] md:h-[500px]  my-2">
+                                         <img src={url} alt="" className="w-full h-full object-cover " />
                                        </div>
-                                       </SwiperSlide>
+                                      </Link>
+                                       
+                                       
                                     ))}
-
-                    </Swiper>
                                    
                                 </div>
                                 </div>
@@ -99,6 +71,7 @@ export const Images = () => {
 
 
         </div>
+        <div className="w-full h-[20vh]"></div>
     </div>
   )
 }
