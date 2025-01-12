@@ -8,13 +8,12 @@ import { Link } from "react-router-dom";
 export const Index = () => {
     const [isActive, setIsActive] = useState(false)
   return (
-    <div className="w-full flex items-center justify-between">
+    <div className="w-full md:w-[90%] flex items-center justify-between md:mx-auto border">
       <div className="flex gap-5 pl-[2rem]">
       <FaInstagram style={{fontSize: "40px", cursor: "pointer"}}/>
-      <FaInstagram style={{fontSize: "40px", opacity:0}}/>
       </div>
         <Link to="/" className="">
-          <h1 className="text-[3rem] font-apercuM">Ymkupnext!</h1>
+          <h1 className="text-[3rem] md:text-[2rem]  font-apercuM">Ymkupnext!</h1>
         </Link>
         <div className="button  z-[999] cursor-pointer" onClick={() => setIsActive(!isActive)}>
             <div className={`burger  ${isActive ? 'burgeractive' : ''}`} ></div>
