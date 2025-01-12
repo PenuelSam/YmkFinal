@@ -33,7 +33,7 @@ export const Images = () => {
       
         {
             projects && (
-                <div className="  grid grid-cols-3 md:grid-cols-2 gap-4 mt-[5rem]  mb-[3rem] border border-black"  >
+                <div className=" sm:w-[90%] grid grid-cols-3 md:grid-cols-2 gap-4 mt-[5rem]  mb-[3rem] border border-black"  >
       
                 
                     {
@@ -49,7 +49,7 @@ export const Images = () => {
                                 {Images.slice(0,1).map((url, index) => (
                                      
                                       <Link key={index} to={`/image/${prod._id}`}>
-                                      <div className="w-[500px] h-[700px] md:w-[300px] md:h-[500px] sm:w-[200px] sm:h-[300px] my-2">
+                                      <div className="w-[500px] h-[700px] md:w-[300px] md:h-[500px] sm:w-[190px] sm:h-[300px] my-2">
                                          <img src={url} alt="" className="w-full h-full object-cover " />
                                        </div>
                                       </Link>

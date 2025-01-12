@@ -48,11 +48,11 @@ const handleImageClick = (index: number): void => {
   return (
     <>
     <Index />
-    <div className="w-full h-full px-[7rem] md:px-2 flex flex-col items-center py-[3rem]">
+    <div className="w-full h-full px-[7rem] md:px-2 sm:px-0 flex flex-col items-center py-[3rem]">
       <h1 className="text-[3rem] pb-3 font-apercuB">{Project?.name}</h1>
 
       {/* Image grid section */}
-      <div className="grid grid-cols-3 gap-5 mb-20 md:grid-cols-2">
+      <div className="grid grid-cols-3 gap-5 mb-20 md:grid-cols-2 border border-black sm:w-[90%]">
         {Project?.imageUrls.map((url, index) => (
           <div
             key={url}
