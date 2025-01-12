@@ -13,7 +13,7 @@ export const Homepage = () => {
         </div>
         <div className=" w-[50%] md:w-[95%] flex flex-col  gap-5 md:gap-5">
           <p className="text-[20px] font-apercuR pb-10 md:pb-5">FullStack Creative.</p>
-          <p className="text-[3.5rem] md:text-[2.5rem] sm:text-[1.5rem] leading-[65px] md:leading-[50px]  pr-[2rem] md:pr-0 font-apercuM  " >Hi, my name is Yimika. I do photography, videography and content marketing. Let’s work together.</p>
+          <p className="text-[3.5rem] md:text-[2.5rem] sm:text-[1.5rem] leading-[65px] md:leading-[50px] sm:leading-[40px]  pr-[2rem] md:pr-0 font-apercuM  " >Hi, my name is Yimika. I do photography, videography and content marketing. Let’s work together.</p>
           <Link to="/contact" className="">
             <button className="px-[2rem] py-[1rem] bg-black text-white rounded-md text-[18px] font-apercuR">Contact</button>
           </Link>

@@ -23,7 +23,7 @@ export const Images = () => {
         )}
         
         
-        <div className="  top-[10rem] relative flex flex-col items-start justify-between">
+        <div className="  top-[10rem] relative flex flex-col items-center justify-between">
        
         <div className="w-full flex   items-center gap-5  md:mx-5 md:w-[90%] justify-center">
             {/*<h1 className="text-[15rem] font-IFkicaBold">{totalLength < 10 ? `0${totalLength}` : totalLength} -</h1>*/}
@@ -33,7 +33,7 @@ export const Images = () => {
       
         {
             projects && (
-                <div className=" w-full  md:px-[1rem] grid grid-cols-3 md:grid-cols-2 gap-4 mt-[5rem]  mb-[3rem]"  >
+                <div className="  grid grid-cols-3 md:grid-cols-2 gap-4 mt-[5rem]  mb-[3rem] border border-black"  >
       
                 
                     {
@@ -41,7 +41,7 @@ export const Images = () => {
                         projects.map((prod) => {
                             const Images = prod.imageUrls
                             return (
-                                <div onClick={() => setModal(!modal)} className="cursor-pointer border">
+                                <div onClick={() => setModal(!modal)} className="cursor-pointer border border-black">
                                      
                                     
                                    
