@@ -9,8 +9,8 @@ export const Index = () => {
     const [isActive, setIsActive] = useState(false)
   return (
     <div className="w-full md:w-[90%] flex items-center justify-between md:mx-auto border">
-      <div className="flex gap-5 pl-[2rem]">
-      <FaInstagram style={{fontSize: "40px", cursor: "pointer"}}/>
+      <div className="flex gap-5 ">
+      <FaInstagram style={{fontSize: "25px", cursor: "pointer"}}/>
       </div>
         <Link to="/" className="">
           <h1 className="text-[3rem] md:text-[2rem]  font-apercuM">Ymkupnext!</h1>
