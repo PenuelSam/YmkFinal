@@ -73,7 +73,7 @@ const handleImageClick = (index: number): void => {
         <div className="fixed top-0 left-0 w-full h-full bg-black/30  flex items-center justify-center">
           <div className=" w-[80%] h-[80%] ">
             <button
-              className="absolute top-5 md:right-3 right-[3rem] text-[3rem]  text-white cursor-pointer"
+              className="absolute top-5 md:right-3 sm:top-10 sm:right-5 right-[3rem] text-[3rem]  text-white cursor-pointer"
               onClick={handleCloseModal}
             >
               &times;
