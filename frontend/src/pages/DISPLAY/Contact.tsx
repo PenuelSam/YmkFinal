@@ -14,7 +14,7 @@ export const Contact = () => {
           <p className="font-Inter text-[1.5rem] md:text-[1rem] sm:text-[0.8rem] xsm:text-[0.5rem]">
             YMKUPNEXT! IS YOUR FAVOURITE DIRECTOR'S FAVOURITE DIRECTOR
           </p>
-          <div className="flex items-center gap-5">
+          <div className="flex  gap-5 flex-col">
             <p className="text-[1.5rem] md:text-[1rem] sm:text-[0.8rem] xsm:text-[0.5rem] font-Inter">
               contactymk30@gmail.com
             </p>
@@ -23,7 +23,7 @@ export const Contact = () => {
               to="mailto:contactymk30@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-5 border-2 border-black px-3 py-1 rounded-full"
+              className="flex items-center gap-5 border-2 border-black px-3 py-1 rounded-full w-[250px]"
             >
               <p>click  to send me a mail</p>
               <IoMdMail className="text-[30px] md:text-[20px]" />
