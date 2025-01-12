@@ -49,7 +49,7 @@ export const Images = () => {
                                 {Images.slice(0,1).map((url, index) => (
                                      
                                       <Link key={index} to={`/image/${prod._id}`}>
-                                      <div className="w-[500px] h-[700px] md:w-[300px] md:h-[500px] sm:w-[150px] sm:h-[300px] my-2">
+                                      <div className="w-[500px] h-[700px] md:w-[300px] md:h-[500px] sm:w-[170px] sm:h-[300px] my-2">
                                          <img src={url} alt="" className="w-full h-full object-cover " />
                                        </div>
                                       </Link>

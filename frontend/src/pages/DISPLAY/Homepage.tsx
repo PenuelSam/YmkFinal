@@ -8,7 +8,7 @@ export const Homepage = () => {
     <div >
     <Index />
     <div className="w-full h-full flex md:flex-col  items-center justify-center px-[3.5rem] md:px-[2rem] mt-[3rem] gap-32 md:gap-5">
-        <div className=" w-[50%]  md:w-[100%] md:h-[600px] sm:h-[400px]">
+        <div className=" w-[50%]  md:w-[100%] md:h-[600px] sm:h-[460px]">
           <img src={image} alt="" className="w-full h-full object-cover"/>
         </div>
         <div className=" w-[50%] md:w-[100%] flex flex-col  gap-5">
@@ -26,7 +26,7 @@ export const Homepage = () => {
         <p className="text-[3rem] md:text-[1.1rem] font-DiptyqueBI ">Redlight Fashion Room,</p>
         <p className="text-[3rem] md:text-[1.1rem] font-DiptyqueBI ">Saint Moriartyy</p>
       </div>
-      <p className="text-[20px] md:px-5 text-center font-apercuR">I’ve worked with variation of collectives such as Ile Ijo, Engage Space , Redlight Fashion Room and more. 
+      <p className="text-[20px] md:text-[18px] md:px-5 text-center font-apercuR">I’ve worked with variation of collectives such as Ile Ijo, Engage Space , Redlight Fashion Room and more. 
       </p>
     </div>
     <Skills />

@@ -52,11 +52,11 @@ const handleImageClick = (index: number): void => {
       <h1 className="text-[3rem] pb-3 font-apercuB">{Project?.name}</h1>
 
       {/* Image grid section */}
-      <div className="grid grid-cols-3 gap-5 mb-20 md:grid-cols-2  sm:w-[90%]">
+      <div className="grid grid-cols-3 gap-5 mb-20 md:grid-cols-2  sm:w-[95%]">
         {Project?.imageUrls.map((url, index) => (
           <div
             key={url}
-            className="w-[500px] h-[500px] md:w-[300px] md:h-[300px] sm:w-[150px] sm:h-[200px] cursor-pointer"
+            className="w-[500px] h-[500px] md:w-[300px] md:h-[300px] sm:w-[170px] sm:h-[200px] cursor-pointer"
             onClick={() => handleImageClick(index)}
           >
             <img
