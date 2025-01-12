@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export const Index = () => {
     const [isActive, setIsActive] = useState(false)
   return (
-    <div className="w-full md:w-[90%] flex items-center justify-between md:mx-auto">
+    <div className="w-full md:w-[90%] flex items-center px-[3rem] md:px-0 justify-between md:mx-auto">
         <Link to="/" className=" ">
           <h1 className="text-[3rem] md:text-[2.3rem]  font-apercuM">Ymkupnext!</h1>
         </Link>
