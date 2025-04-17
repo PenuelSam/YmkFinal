@@ -70,10 +70,10 @@ const handleImageClick = (index: number): void => {
 
       {/* Modal section */}
       {showModal && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black/30  flex items-center justify-center">
+        <div className="fixed top-0 left-0 w-full h-full bg-[#f6f3ea] z-[999]  flex items-center justify-center">
           <div className=" w-[80%] h-[80%] ">
             <button
-              className="absolute top-5 md:right-3 sm:top-10 sm:right-5 right-[3rem] text-[3rem]  text-white cursor-pointer"
+              className="absolute top-5 md:right-3  sm:right-5 right-[3rem] text-[30px]  text-[#333] cursor-pointer "
               onClick={handleCloseModal}
             >
               &times;
@@ -83,24 +83,24 @@ const handleImageClick = (index: number): void => {
               <img
                 src={Project?.imageUrls[selectedImageIndex ?? 0]}
                 alt="Selected image"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover rounded-[10px]"
               />
             </div>
-            <div className="absolute bottom-[45%] md:left-3 sm:bottom-5 left-[3rem]">
+            <div className="absolute bottom-[45%] md:left-2  left-[3rem]">
             <button
-                className="text-[3rem] font-bold cursor-pointer text-white"
+                className="text-[3rem] font-bold cursor-pointer text-[#333]"
                 onClick={handlePrevImage}
               >
-                <IoIosArrowDropleft />
+                <IoIosArrowDropleft style={{fontSize: "30px"}}/>
               </button>
             </div>
-            <div className="absolute bottom-[45%] sm:bottom-5 md:right-3 right-[3rem] flex gap-5">
+            <div className="absolute bottom-[45%]  md:right-2 right-[3rem] flex gap-5">
               
               <button
-                className="text-[3rem] font-bold cursor-pointer text-white"
+                className="text-[3rem] font-bold cursor-pointer text-[#333]"
                 onClick={handleNextImage}
               >
-              <IoIosArrowDropright />
+              <IoIosArrowDropright style={{fontSize: "30px"}}/>
               </button>
             </div>
           </div>
