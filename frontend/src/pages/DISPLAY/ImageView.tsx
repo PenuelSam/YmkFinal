@@ -56,7 +56,7 @@ const handleImageClick = (index: number): void => {
         {Project?.imageUrls.map((url, index) => (
           <div
             key={url}
-            className=" md:w-[300px] md:h-[300px] sm:w-[200px] cursor-pointer"
+            className="  cursor-pointer"
             onClick={() => handleImageClick(index)}
           >
             <img
