@@ -96,7 +96,7 @@
 /* For Firefox */
 html {
     scrollbar-width: thin; /* Width of the scrollbar */
-    scrollbar-color: #333 #000; /* Color of the thumb and track */
+    scrollbar-color: #333 #f6f3ea; /* Color of the thumb and track */
 }
 
 /* For Internet Explorer and Edge (Legacy) */
@@ -118,15 +118,14 @@ body {
   }
 
   .button{
-    position: relative;
-    
+    position: absolute;
+    right: 3rem;
     width: 80px;
     height: 80px;
-    /*background-color: #222222;*/
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
   }
 
   .burger{

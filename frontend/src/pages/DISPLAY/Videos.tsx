@@ -36,24 +36,24 @@ export const Videos = () => {
 
     return (
         <div className="">
-            <div className="w-full items-center justify-center relative top-[10rem]">
+            <div className="w-full items-center justify-center relative top-[7rem]">
                 <h1 className="text-[5rem]  sm:text-[3.5rem] xsm:text-[3rem] flex justify-center font-bold uppercase font-apercuB">
                     Videos
                 </h1>
             </div>
             {Projects && (
-                <div className="max-w-[1400px] md:w-full md:px-[1rem] mx-auto grid grid-cols-2 md:grid-cols-1  gap-4 mt-[15rem]  mb-[3rem]">
+                <div className="max-w-[1400px] md:w-full md:px-[1rem] mx-auto grid grid-cols-2 md:grid-cols-1  gap-4 mt-[10rem]">
                     {Projects.map((prod, prodIndex) =>
                         prod.videoUrls.map((url, index) => {
                             const uniqueIndex = `${prodIndex}-${index}`; // Create a unique index for each video
                             return (
                                 <div key={uniqueIndex}>
-                                     <div  className="flex  gap-4 m-2 relative group h-[300px]">
+                                     <div  className="flex  gap-4 m-2 relative group h-[350px]">
                                     {/* Cover Image */}
                                     <img
                                         src={prod.coverPhoto}
                                         alt={`Thumbnail for video ${index + 1}`}
-                                        className={`absolute top-0 left-0 w-full h-full object-cover transition-all duration-300  ${
+                                        className={`absolute top-0 left-0 w-full h-full object-cover shadow-md rounded-[10px] transition-all duration-300  ${
                                             playingIndex === uniqueIndex ? "hidden" : "block"
                                         }`}
                                     />

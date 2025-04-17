@@ -23,7 +23,7 @@ export const Images = () => {
         )}
         
         
-        <div className="  top-[10rem] relative flex flex-col items-center justify-between">
+        <div className="  top-[6rem] relative flex flex-col items-center justify-between">
        
         <div className="w-full flex   items-center gap-5  md:mx-5 md:w-[90%] justify-center">
             {/*<h1 className="text-[15rem] font-IFkicaBold">{totalLength < 10 ? `0${totalLength}` : totalLength} -</h1>*/}
@@ -33,7 +33,7 @@ export const Images = () => {
       
         {
             projects && (
-                <div className=" sm:w-[90%] grid grid-cols-3 md:grid-cols-2 gap-4 mt-[5rem]  mb-[3rem] " >
+                <div className="  md:w-full  mx-[1rem]  sm:w-[90%] grid grid-cols-3 md:grid-cols-2 gap-4 mt-[3rem]  mb-[3rem] " >
       
                 
                     {
@@ -45,12 +45,12 @@ export const Images = () => {
                                      
                                     
                                    
-                                <div className="w-full px-[3rem] md:px-0">
+                                <div className="w-full  ">
                                 {Images.slice(0,1).map((url, index) => (
                                      
                                       <Link key={index} to={`/image/${prod._id}`}>
-                                      <div className="w-[500px] h-[700px] md:w-[300px] md:h-[500px] sm:w-[170px] sm:h-[300px] my-2">
-                                         <img src={url} alt="" className="w-full h-full object-cover " />
+                                      <div className="   my-2">
+                                         <img src={url} alt="" className="w-full h-full object-cover rounded-[10px] shadow-md" />
                                        </div>
                                       </Link>
                                        
