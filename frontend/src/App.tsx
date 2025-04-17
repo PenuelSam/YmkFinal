@@ -4,12 +4,14 @@ import { Images } from "./pages/DISPLAY/Images"
 import { Contact } from "./pages/DISPLAY/Contact"
 import WorkPage from "./pages/DISPLAY/Work"
 import { ImageView } from "./pages/DISPLAY/ImageView"
+import ScrollToTop from "./component/ScrollToTop"
 
 
 const App = () => {
   return (
     <div className="w-screen h-full bg-[#f6f3ea] text-black overflow-x-hidden">
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="*" element={<Homepage />} />
         <Route path="/work" element={<WorkPage />} />

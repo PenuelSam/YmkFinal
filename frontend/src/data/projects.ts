@@ -57,6 +57,34 @@ import ovm15 from "../assets/ovmbr/ovm17.jpeg"
 import ovm16 from "../assets/ovmbr/ovm18.jpeg"
 import ovmCover from "../assets/ovmbr/ovmbr-cover-copy.jpeg"
 import vidCover3 from "../assets/ovmbr/ovmbr-vid-cover.png"
+import noir1 from "../assets/Noir/noir1.jpg"
+import noir2 from "../assets/Noir/noir2.jpg"
+import noir3 from "../assets/Noir/noir3.jpg"
+import noirVid from "../assets/Noir/noirVid.mp4"
+import noirCover from "../assets/Noir/noir-cover.png"
+
+import luwa1 from "../assets/Luwa/luwa1.jpg"
+import luwa2 from "../assets/Luwa/luwa2.jpg"
+import luwa3 from "../assets/Luwa/luwa3.jpg"
+import luwa4 from "../assets/Luwa/luwa4.jpg"
+import luwa5 from "../assets/Luwa/luwa5.jpg"
+import luwa6 from "../assets/Luwa/luwa6.jpg"
+import luwa7 from "../assets/Luwa/luwa7.jpg"
+import luwaVid from "../assets/Luwa/luwaVid.mp4"
+import luwaCover from "../assets/Luwa/luwa-cover.png"
+
+import drayVid from "../assets/drayPappi.mp4"
+import drayCover from "../assets/dray-vid-cover.png"
+
+import iconic from "../assets/ICONIC.mp4"
+import iconicCover from "../assets/iconic-cover.png"
+
+import waniVid from "../assets/waniVid.mp4"
+import waniCover from "../assets/wani-vid-cover.png"
+import waniXazanti from "../assets/waniXazanti.mp4"
+import wXaCover from "../assets/wXa-cover.png"
+import cupidVid from "../assets/cupidVid.mp4"
+import cupidCover from "../assets/cupidCover.png"
 
 import syntax from "../assets/syntax.mp4"
 import syntaxCover from "../assets/syntax-vid-cover.png"
@@ -99,7 +127,7 @@ export const Projects: ProjectType[] = [
         },
         {
             _id: "5",
-            name: "",
+            name: "Syntax",
             videoUrls: [syntax],
             imageUrls: [],
             coverPhoto: syntaxCover,
@@ -110,6 +138,55 @@ export const Projects: ProjectType[] = [
             videoUrls: [ehVid],
             imageUrls: [eh1,eh4,eh2,eh8,eh5,eh6,eh7,eh3],
             coverPhoto: eh1,
+        },
+        {
+            _id: "7",
+            name: "Noir",
+            videoUrls: [noirVid],
+            imageUrls: [noir2,noir1,noir3],
+            coverPhoto: noirCover,
+        },
+        {
+            _id: "8",
+            name: "Luwa",
+            videoUrls: [luwaVid],
+            imageUrls: [luwa7,luwa2,luwa3,luwa4,luwa5,luwa6,luwa1],
+            coverPhoto: luwaCover,
+        },
+        {
+            _id: "9",
+            name: "Dray Pappi",
+            videoUrls: [drayVid],
+            imageUrls: [],
+            coverPhoto: drayCover,
+        },
+        {
+            _id: "10",
+            name: "ICONIC",
+            videoUrls: [iconic],
+            imageUrls: [],
+            coverPhoto: iconicCover,
+        },
+        {
+            _id: "11",
+            name: "Wani X azanti",
+            videoUrls: [waniXazanti],
+            imageUrls: [],
+            coverPhoto: wXaCover,
+        },
+        {
+            _id: "12",
+            name: "Wani",
+            videoUrls: [waniVid],
+            imageUrls: [],
+            coverPhoto: waniCover,
+        },
+        {
+            _id: "13",
+            name: "Cupid",
+            videoUrls: [cupidVid],
+            imageUrls: [],
+            coverPhoto: cupidCover,
         },
        
 ]

@@ -33,7 +33,7 @@ export const Images = () => {
       
         {
             projects && (
-                <div className="  md:w-full  mx-[1rem]  sm:w-[90%] grid grid-cols-3 md:grid-cols-2 gap-4 mt-[3rem]  mb-[3rem] " >
+                <div className="  md:w-full  mx-[1rem]  sm:w-[90%] grid grid-cols-3 md:grid-cols-1 gap-4 mt-[3rem]  mb-[3rem] " >
       
                 
                     {
@@ -45,18 +45,20 @@ export const Images = () => {
                                      
                                     
                                    
-                                <div className="w-full  ">
+                                <div className="w-full  relative">
                                 {Images.slice(0,1).map((url, index) => (
                                      
-                                      <Link key={index} to={`/image/${prod._id}`}>
+                                      <Link key={index} to={`/image/${prod._id}`} className="block relative">
                                       <div className="   my-2">
                                          <img src={url} alt="" className="w-full h-full object-cover rounded-[10px] shadow-md" />
+                                         <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/50 px-[10px] py-3 rounded-md z-[998]">
+                                            <p className="text-[#000] font-apercuR text-[18px]">Explore {prod.name}</p>
+                                        </div>
                                        </div>
                                       </Link>
                                        
                                        
                                     ))}
-                                   
                                 </div>
                                 </div>
                             )      

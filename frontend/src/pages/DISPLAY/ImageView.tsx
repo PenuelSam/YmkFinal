@@ -83,7 +83,7 @@ const handleImageClick = (index: number): void => {
               <img
                 src={Project?.imageUrls[selectedImageIndex ?? 0]}
                 alt="Selected image"
-                className="w-full h-full object-cover rounded-[10px]"
+                className="w-[500px] h-[500px] object-cover rounded-[10px]"
               />
             </div>
             <div className="absolute bottom-[45%] md:left-2  left-[3rem]">
