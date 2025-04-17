@@ -49,10 +49,14 @@ export const Images = () => {
                                 {Images.slice(0,1).map((url, index) => (
                                      
                                       <Link key={index} to={`/image/${prod._id}`} className="block relative">
-                                      <div className="   my-2">
-                                         <img src={url} alt="" className="w-full h-full object-cover rounded-[10px] shadow-md" />
-                                         <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-white/50 px-[10px] py-3 rounded-md z-[998]">
-                                            <p className="text-[#000] font-apercuR text-[18px]">Explore {prod.name}</p>
+                                      <div className="my-2 relative overflow-hidden rounded-[10px] shadow-md">
+                                         <img src={url} alt="" className="w-full h-full object-cover rounded-[10px] " />
+
+                                         {/* Dark overlay */}
+                                        <div className="absolute inset-0 bg-black/50 rounded-[10px] z-10"></div>
+
+                                         <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 border-2 w-[50%] max-w-sm py-3 rounded-md z-[998]">
+                                            <p className="text-[#fff] font-apercuR text-[18px] text-center ">Explore {prod.name}</p>
                                         </div>
                                        </div>
                                       </Link>
